@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>1/1/0</td>
 </tr><tr>
-<td>Started on:</td><td>Fri Apr 21 01:46:52 EDT 2023</td>
+<td>Started on:</td><td>Sat Apr 22 01:01:52 EDT 2023</td>
 </tr>
-<tr><td>Total time:</td><td>104 seconds (104838 ms)</td>
+<tr><td>Total time:</td><td>581 seconds (581954 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,16 +76,16 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Recipes_Scraping.Hypertension_Recipe_Scraping.clickReciep()'><b>clickReciep</b><br>Test class: Recipes_Scraping.Hypertension_Recipe_Scraping</td>
-<td><div><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from no such window
+<td title='Recipes_Scraping.PCOS_Recipe_Scraping.clickReciep()'><b>clickReciep</b><br>Test class: Recipes_Scraping.PCOS_Recipe_Scraping</td>
+<td><div><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@itemprop=&apos;nutrition&apos;]&quot;}
   (Session info: chrome=112.0.5615.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8457c6ce8f6306a3db2c4049a3f2cd4b, goBack {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\swati\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61461/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8457c6ce8f6306a3db2c4049a3f2cd4b
+Command: [d84ba15b53b6b39bb09a0394af7888a4, findElement {using=xpath, value=//span[@itemprop=&apos;nutrition&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\swati\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55924/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d84ba15b53b6b39bb09a0394af7888a4
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -96,10 +96,13 @@ Session ID: 8457c6ce8f6306a3db2c4049a3f2cd4b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:972)
-	at Recipes_Scraping.Hypertension_Recipe_Scraping.clickReciep(Hypertension_Recipe_Scraping.java:46)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Recipes_Scraping.PCOS_Recipe_Scraping.reciepDetails(PCOS_Recipe_Scraping.java:110)
+	at Recipes_Scraping.PCOS_Recipe_Scraping.checkElimination(PCOS_Recipe_Scraping.java:88)
+	at Recipes_Scraping.PCOS_Recipe_Scraping.clickReciep(PCOS_Recipe_Scraping.java:57)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -126,16 +129,16 @@ Session ID: 8457c6ce8f6306a3db2c4049a3f2cd4b
 	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
-</pre></div><a href='#' onClick='toggleBox("stack-trace913796146", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace913796146'><pre>org.openqa.selenium.WebDriverException: unknown error: cannot determine loading status
-from no such window
+</pre></div><a href='#' onClick='toggleBox("stack-trace1251108139", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1251108139'><pre>org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//span[@itemprop=&apos;nutrition&apos;]&quot;}
   (Session info: chrome=112.0.5615.121)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
 Build info: version: &apos;4.8.3&apos;, revision: &apos;e5e76298c3&apos;
 System info: os.name: &apos;Windows 11&apos;, os.arch: &apos;amd64&apos;, os.version: &apos;10.0&apos;, java.version: &apos;19.0.2&apos;
 Driver info: org.openqa.selenium.chrome.ChromeDriver
-Command: [8457c6ce8f6306a3db2c4049a3f2cd4b, goBack {}]
-Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\swati\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:61461}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:61461/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
-Session ID: 8457c6ce8f6306a3db2c4049a3f2cd4b
+Command: [d84ba15b53b6b39bb09a0394af7888a4, findElement {using=xpath, value=//span[@itemprop=&apos;nutrition&apos;]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 112.0.5615.121, chrome: {chromedriverVersion: 112.0.5615.49 (bd2a7bcb881c..., userDataDir: C:\Users\swati\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:55924}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:55924/devtoo..., se:cdpVersion: 112.0.5615.121, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: ignore, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: d84ba15b53b6b39bb09a0394af7888a4
 	at java.base/jdk.internal.reflect.DirectConstructorHandleAccessor.newInstance(DirectConstructorHandleAccessor.java:67)
 	at java.base/java.lang.reflect.Constructor.newInstanceWithCaller(Constructor.java:500)
 	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:484)
@@ -146,10 +149,13 @@ Session ID: 8457c6ce8f6306a3db2c4049a3f2cd4b
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
 	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
 	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:598)
-	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:602)
-	at org.openqa.selenium.remote.RemoteWebDriver$RemoteNavigation.back(RemoteWebDriver.java:972)
-	at Recipes_Scraping.Hypertension_Recipe_Scraping.clickReciep(Hypertension_Recipe_Scraping.java:46)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at Recipes_Scraping.PCOS_Recipe_Scraping.reciepDetails(PCOS_Recipe_Scraping.java:110)
+	at Recipes_Scraping.PCOS_Recipe_Scraping.checkElimination(PCOS_Recipe_Scraping.java:88)
+	at Recipes_Scraping.PCOS_Recipe_Scraping.clickReciep(PCOS_Recipe_Scraping.java:57)
 	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
 	at java.base/java.lang.reflect.Method.invoke(Method.java:578)
 	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
@@ -177,8 +183,8 @@ Session ID: 8457c6ce8f6306a3db2c4049a3f2cd4b
 	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
 	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
 </pre></div></td>
-<td>88</td>
-<td>Recipes_Scraping.Hypertension_Recipe_Scraping@7b2bbc3</td></tr>
+<td>560</td>
+<td>Recipes_Scraping.PCOS_Recipe_Scraping@7b2bbc3</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -189,10 +195,10 @@ Session ID: 8457c6ce8f6306a3db2c4049a3f2cd4b
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='Recipes_Scraping.Hypertension_Recipe_Scraping.openurl()'><b>openurl</b><br>Test class: Recipes_Scraping.Hypertension_Recipe_Scraping</td>
+<td title='Recipes_Scraping.PCOS_Recipe_Scraping.openurl()'><b>openurl</b><br>Test class: Recipes_Scraping.PCOS_Recipe_Scraping</td>
 <td></td>
-<td>14</td>
-<td>Recipes_Scraping.Hypertension_Recipe_Scraping@7b2bbc3</td></tr>
+<td>19</td>
+<td>Recipes_Scraping.PCOS_Recipe_Scraping@7b2bbc3</td></tr>
 </table><p>
 </body>
 </html>
